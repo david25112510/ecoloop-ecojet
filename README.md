@@ -81,7 +81,7 @@ Antes de um piloto real, será necessário validar as regras com a Ecojet e defi
 
 ## Projeto acadêmico
 
-Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do curso de Análise e Desenvolvimento de Sistemas. Desenvolvido por **David Silva de Souza (4º período)** e **José Carlos (1º período)**. A proposta foi discutida com Wesley Almeida, responsável da Ecojet, em visita híbrida realizada em 19/11/2026; David esteve presencialmente e José Carlos participou por videochamada. Isso registra uma conversa de diagnóstico, não uma aprovação comercial do sistema.
+Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do curso de Análise e Desenvolvimento de Sistemas. Desenvolvido por **David Silva de Souza (4º período)** e **José Carlos (1º período)**. A proposta foi discutida com um representante da Ecojet em visita híbrida realizada em 19/11/2026; David esteve presencialmente e José Carlos participou por videochamada. Isso registra uma conversa de diagnóstico, não uma aprovação comercial do sistema.
 
 Consulte a linha do tempo em [`docs/HISTORICO-DO-PROJETO.md`](docs/HISTORICO-DO-PROJETO.md) e os limites acadêmicos e de escopo em [`docs/CONTEXTO-E-ESCOPO.md`](docs/CONTEXTO-E-ESCOPO.md).
 

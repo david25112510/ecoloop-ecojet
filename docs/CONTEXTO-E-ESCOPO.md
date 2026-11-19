@@ -2,7 +2,7 @@
 
 ## Contexto
 
-O ECOLOOP é uma proposta de programa de relacionamento associada às recargas de cartuchos e toners da Ecojet. A ideia surgiu de uma conversa de diagnóstico com Wesley Almeida, responsável da empresa, em 19/11/2026. Segundo o relato compartilhado naquela conversa, a empresa gostaria de incentivar clientes a escolher recargas oferecendo um benefício ecológico acumulável.
+O ECOLOOP é uma proposta de programa de relacionamento associada às recargas de cartuchos e toners da Ecojet. A ideia surgiu de uma conversa de diagnóstico com um representante da empresa em 19/11/2026. Segundo o relato compartilhado naquela conversa, a empresa gostaria de incentivar clientes a escolher recargas oferecendo um benefício ecológico acumulável.
 
 O site público da Ecojet apresenta serviços de recarga de cartuchos e toners, além de informações sobre reutilização e meio ambiente. A proposta ECOLOOP busca complementar essa comunicação por meio de pontos ligados a cada recarga. O contato institucional e as regras de negócio ainda devem ser validados pela empresa.
 

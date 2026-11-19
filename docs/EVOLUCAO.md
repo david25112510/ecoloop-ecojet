@@ -22,6 +22,7 @@ Esta lista organiza discussões futuras. Não representa trabalho já concluído
 - Implementar login e autorização para cliente e equipe.
 - Registrar pontos em livro razão auditável, com operações idempotentes.
 - Emitir e validar QR Codes no servidor; não confiar em pontuação calculada só no navegador.
+- Validar a impressão física da etiqueta na GC420 local: variante do equipamento, tamanho e tipo de mídia, driver, calibração, contraste e leitura do QR.
 - Integrar com entrega e caixa após disponibilidade das interfaces autorizadas.
 
 ## Etapa 4 — Verificar e pilotar

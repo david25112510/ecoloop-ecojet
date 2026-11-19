@@ -5,14 +5,16 @@
 ```mermaid
 flowchart LR
   A[Equipe registra a recarga] --> B[Sistema gera código e QR únicos]
-  B --> C[Equipe entrega o cartucho ou toner]
-  C --> D[Entrega é confirmada no painel]
-  D --> E[Cliente escaneia o QR da embalagem]
-  E --> F{Código válido e não usado?}
-  F -- Não --> G[Exibir motivo e não creditar]
-  F -- Sim --> H[Creditar pontos uma única vez]
-  H --> I[Cliente consulta saldo e extrato]
-  I --> J[Cliente pode solicitar desconto demonstrativo]
+  B --> C[Equipe imprime etiqueta na Zebra GC420]
+  C --> D[Etiqueta acompanha a embalagem]
+  D --> E[Equipe entrega o cartucho ou toner]
+  E --> F[Entrega é confirmada no painel]
+  F --> G[Cliente escaneia o QR da etiqueta]
+  G --> H{Código válido e não usado?}
+  H -- Não --> I[Exibir motivo e não creditar]
+  H -- Sim --> J[Creditar pontos uma única vez]
+  J --> K[Cliente consulta saldo e extrato]
+  K --> L[Cliente pode solicitar desconto demonstrativo]
 ```
 
 ## Cálculo da pontuação
@@ -31,11 +33,20 @@ O protótipo representa a conversão fixa de **100 pontos por R$ 1,00 de descont
 
 1. Cada recarga recebe um token aleatório exclusivo.
 2. O token aparece no QR Code e no painel para a demonstração manual.
-3. A confirmação da entrega é pré-requisito para liberar pontos.
-4. A primeira confirmação válida marca o token como utilizado e credita os pontos uma única vez.
-5. Um QR desconhecido, já utilizado ou ainda não entregue não libera pontos.
+3. A equipe imprime a etiqueta na impressora Zebra GC420 instalada no computador local; a janela de impressão permite selecionar o driver Zebra.
+4. A largura e a altura no protótipo devem ser ajustadas para a etiqueta carregada e para as preferências do driver. O padrão de 50 × 30 mm é apenas uma sugestão editável, não uma confirmação do tamanho do rolo da Ecojet. O layout demonstrativo aceita de 45 a 108 mm de largura por 26 a 250 mm de altura.
+5. A etiqueta acompanha o cartucho/toner durante a entrega.
+6. A confirmação da entrega é pré-requisito para liberar pontos.
+7. A primeira confirmação válida marca o token como utilizado e credita os pontos uma única vez.
+8. Um QR desconhecido, já utilizado ou ainda não entregue não libera pontos.
 
 Na implementação atual essas regras são executadas apenas no navegador. Uma pessoa pode alterar o conteúdo de `localStorage`; portanto, o mecanismo ilustra o fluxo e não é prova segura de entrega nem prevenção robusta a fraude.
+
+## Impressora e etiqueta
+
+O fluxo previsto usa uma impressora de etiquetas Zebra GC420 instalada no computador local. Nesta versão, a aplicação prepara uma página do tamanho informado e usa a caixa de impressão padrão do navegador; a pessoa escolhe a impressora e revisa as opções do driver. A aplicação não detecta automaticamente se a impressora está conectada nem garante que o driver ou mídia estejam configurados.
+
+Antes de imprimir etiquetas reais, confirmar com a Ecojet a variante exata da impressora (GC420d ou GC420t), a dimensão e o tipo de mídia (gap, marca preta ou contínua), a orientação e a calibração do driver. Consulte a documentação Zebra para [GC420d](https://www.zebra.com/content/dam/support-dam/en/documentation/unrestricted/guide/product/gc420d-ug-en.pdf), [especificações GC420](https://www.zebra.com/content/dam/zebra_new_ia/en-us/solutions-verticals/product/Printers/Desktop%20Printers/G-Series%20GC%20Desktop%20Printers/GENERAL/documents/gc20d-t-tech-specs.pdf) e [calibração da série G](https://support.zebra.com/article/G-Series-GC-Models-Calibrating-the-Printer).
 
 ## Dúvidas para validar com a Ecojet
 

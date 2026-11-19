@@ -26,10 +26,10 @@ Depois, abra `http://localhost:8000` no navegador. A permissão de câmera só �
 
 1. Abra **Painel Ecojet** e entre em **Recargas e QR**.
 2. Selecione **Nova recarga**, informe o cliente, o tipo de suprimento e o valor.
-3. Abra o QR Code gerado para o pedido e marque a entrega como concluída.
-4. Volte para **Área do cliente** e selecione **Escanear QR da recarga**. Para demonstração sem câmera, use o código único exibido no painel.
-5. Confira o saldo e o extrato do cliente.
-6. Em **Regras de pontos**, ajuste a taxa de pontos por real e salve. A nova taxa vale para recargas registradas a partir daí.
+3. No detalhe do pedido, confira ou ajuste largura e altura para corresponder à etiqueta carregada na Zebra GC420 e selecione **Imprimir etiqueta na Zebra GC420**.
+4. Na janela de impressão do navegador, escolha a impressora Zebra local e confirme as preferências de mídia; a aplicação abre a prévia/impressão, mas não dispara impressão silenciosa.
+5. Marque a entrega como concluída. O cliente recebe o cartucho com a etiqueta e escaneia o QR pela área do cliente. Para a demonstração sem câmera, use o código único exibido no painel.
+6. Confira o saldo e o extrato do cliente. Em **Regras de pontos**, ajuste a taxa por real; a nova taxa vale para recargas registradas a partir daí.
 
 Os dados ficam no armazenamento local do navegador (`localStorage`). Limpar os dados do site pode apagar o estado dessa demonstração. O botão de resgate altera apenas o saldo demonstrativo: não emite cupom nem autoriza desconto real.
 
@@ -38,6 +38,7 @@ Os dados ficam no armazenamento local do navegador (`localStorage`). Limpar os d
 - Área demonstrativa do cliente com saldo, histórico e pontos disponíveis para resgate.
 - Painel demonstrativo da Ecojet com registro de recarga e controle de entrega.
 - Geração de um token exclusivo por pedido e apresentação do QR Code correspondente.
+- Preparação de etiqueta com QR e envio à janela de impressão local do navegador, permitindo escolher a Zebra GC420 instalada.
 - Leitura por câmera, quando compatível e autorizada, e confirmação por código digitado.
 - Proteção de fluxo: o QR só pontua após a entrega e só pode ser usado uma vez.
 - Configuração administrativa de pontos acumulados por real em recargas.
@@ -75,7 +76,7 @@ Os parâmetros são hipóteses de prototipação e precisam ser confirmados pela
 
 ## Limites e próximos passos técnicos
 
-Esta versão roda inteiramente no navegador. Não possui contas reais, autenticação, banco de dados, controle de acesso, API, validação de pedidos, integração com entregas ou caixa, nem proteção de servidor contra fraude. O painel administrativo é apenas uma tela de demonstração. Não cadastre dados pessoais ou comerciais reais.
+Esta versão roda inteiramente no navegador. A etiqueta é montada localmente e encaminhada à caixa de impressão do navegador para selecionar a Zebra GC420; não há envio direto à impressora por rede ou servidor de impressão. As dimensões da etiqueta devem corresponder ao rolo instalado e às preferências do driver. O protótipo não possui contas reais, autenticação, banco de dados, controle de acesso, API, validação de pedidos, integração com entregas ou caixa, nem proteção de servidor contra fraude. O painel administrativo é apenas uma tela de demonstração. Não cadastre dados pessoais ou comerciais reais.
 
 Antes de um piloto real, será necessário validar as regras com a Ecojet e definir uma arquitetura com autenticação, serviço de backend, banco de dados, QR assinado ou resgate controlado no servidor, trilha de auditoria, tratamento de falhas, política de privacidade e integração com os processos da empresa. O arquivo [`docs/EVOLUCAO.md`](docs/EVOLUCAO.md) detalha uma sequência de trabalho possível.
 

@@ -6,6 +6,8 @@ O protótipo inclui um perfil e quatro recargas fictícias para que as telas nã
 
 Os dados de demonstração não devem ser interpretados como clientes ou pedidos reais. Evite inserir nome, telefone, endereço, pedido ou informação comercial real.
 
+A etiqueta de demonstração contém a marca do programa, referência do pedido, pontos previstos e token do QR. Ela não imprime nome nem telefone do cliente. O token é identificador demonstrativo, não deve ser usado como segredo de autenticação em produção.
+
 ## Riscos da versão local
 
 - Qualquer pessoa com acesso ao navegador pode ler ou alterar os dados locais.

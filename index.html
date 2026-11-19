@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#008c3a">
+  <title>ECOLOOP | Programa de pontos Ecojet</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#inicio" aria-label="ECOLOOP início">
+      <img src="assets/ecoloop-logo-transparent.png" alt="ECOLOOP — Recarregou, pontuou. Reutilizou, ganhou.">
+    </a>
+    <div class="mode-switch" aria-label="Perfil do protótipo">
+      <button class="mode active" data-mode="customer">Área do cliente</button>
+      <button class="mode" data-mode="admin">Painel Ecojet</button>
+    </div>
+    <nav id="customer-nav" class="nav-links">
+      <button class="nav-link active" data-page="inicio"><span>⌂</span> Visão geral</button>
+      <button class="nav-link" data-page="historico"><span>◷</span> Meu extrato</button>
+      <button class="nav-link" data-page="resgatar"><span>✳</span> Usar pontos</button>
+    </nav>
+    <nav id="admin-nav" class="nav-links hidden">
+      <button class="nav-link active" data-page="inicio"><span>⌂</span> Visão geral</button>
+      <button class="nav-link" data-page="recargas"><span>＋</span> Recargas e QR</button>
+      <button class="nav-link" data-page="configuracoes"><span>⚙</span> Regras de pontos</button>
+    </nav>
+    <div class="sidebar-bottom"><span class="leaf">✳</span><p>Uma recarga de cada vez,<br><strong>um ciclo mais sustentável.</strong></p><small>Protótipo acadêmico • PEI I</small></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar"><div><span class="eyebrow">PROGRAMA DE RELACIONAMENTO ECOJET</span><h1 id="page-title">Seu ciclo ECOLOOP</h1></div><div class="profile"><span class="avatar">MC</span><span><strong id="profile-name">Mariana Costa</strong><small id="profile-role">Cliente ECOLOOP</small></span><span class="chevron">⌄</span></div></header>
+
+    <section class="page active" id="page-inicio">
+      <div class="welcome"><div><span class="tag"><i></i> CICLO ATIVO</span><h2>Olá, Mariana! <span class="wave">✳</span></h2><p>Suas recargas ajudam a manter cartuchos em uso por mais tempo.</p><button class="welcome-scan" id="open-customer-scan">▦ &nbsp; Escanear QR da recarga</button></div><div class="welcome-art"><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span><span class="big-leaf">✿</span><span class="art-points">+ pontos<br><small>por recarga</small></span></div></div>
+      <div class="stats-grid">
+        <article class="stat-card points-card"><div class="stat-label">SALDO DISPONÍVEL <span>✳</span></div><strong id="balance">248 <small>pts</small></strong><p>Equivale a <b id="balance-value">R$ 2,48</b> em desconto</p><button class="text-button" data-go="resgatar">Ver como usar <span>→</span></button></article>
+        <article class="stat-card"><div class="stat-label">RECARGAS REGISTRADAS <span>↻</span></div><strong id="refill-count">4</strong><p>Recargas que voltaram ao ciclo</p><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        <article class="stat-card"><div class="stat-label">PRÓXIMO BENEFÍCIO <span>◎</span></div><strong id="next-benefit">52 <small>pts</small></strong><p>Para alcançar R$ 3,00 em desconto</p><div class="progress"><span id="progress-fill"></span></div></article>
+      </div>
+      <div class="content-grid"><article class="panel journey-panel"><div class="panel-heading"><div><span class="eyebrow">SEU HISTÓRICO</span><h3>Recargas recentes</h3></div><button class="text-button" data-go="historico">Ver extrato <span>→</span></button></div><div id="recent-list" class="activity-list"></div></article>
+        <article class="panel how-panel"><div class="how-icon">↻</div><span class="eyebrow">SIMPLES ASSIM</span><h3>Recarregue.<br>Escaneie. Ganhe.</h3><p>Depois que sua recarga for entregue, escaneie o QR Code exclusivo para receber seus pontos.</p><div class="how-steps"><span>01 <small>Recarga</small></span><b>—</b><span>02 <small>Entrega</small></span><b>—</b><span>03 <small>Pontos</small></span></div></article></div>
+    </section>
+
+    <section class="page" id="page-historico"><div class="section-intro"><div><span class="eyebrow">MOVIMENTAÇÕES</span><h2>Meu extrato</h2><p>Acompanhe os pontos gerados pelas suas recargas e os benefícios utilizados.</p></div><div class="balance-chip"><span>Saldo</span><strong id="history-balance">248 pts</strong></div></div><article class="panel table-panel"><div class="table-toolbar"><strong>Atividade da conta</strong><span>Últimos lançamentos</span></div><div class="table-scroll"><table><thead><tr><th>DATA</th><th>ATIVIDADE</th><th>VALOR</th><th>PONTOS</th><th>STATUS</th></tr></thead><tbody id="history-table"></tbody></table></div></article></section>
+
+    <section class="page" id="page-resgatar"><div class="section-intro"><div><span class="eyebrow">BENEFÍCIO ECOLOOP</span><h2>Usar meus pontos</h2><p>Converta pontos em desconto na sua próxima recarga.</p></div></div><div class="redeem-layout"><article class="panel redeem-card"><div class="redeem-top"><span>SEU SALDO</span><span class="redeem-badge">✳ ECOLOOP</span></div><strong id="redeem-balance">248 <small>pontos</small></strong><p>O desconto é aplicado na sua próxima recarga Ecojet.</p><div class="conversion-box"><span>CONVERSÃO</span><b>100 pontos <i>→</i> R$ 1,00</b></div><button class="primary-button" id="redeem-button">Resgatar desconto</button><small class="muted">Protótipo: o resgate é demonstrativo e não gera cupom fiscal.</small></article><article class="panel redeem-info"><div class="info-icon">✦</div><h3>Seu próximo desconto</h3><p id="redeem-explainer">Você já pode transformar seus pontos em desconto.</p><div class="discount-preview"><span>DESCONTO DISPONÍVEL</span><strong id="discount-value">R$ 2,00</strong></div><p class="fine-print">A regra de conversão é definida pela Ecojet. Consulte as condições vigentes no atendimento.</p></article></div></section>
+
+    <section class="page" id="page-recargas"><div class="section-intro"><div><span class="eyebrow">OPERAÇÃO ECOJET</span><h2>Recargas e QR Codes</h2><p>Registre a recarga, acompanhe a entrega e confira a confirmação do cliente.</p></div><button class="primary-button compact" id="new-refill">＋ Nova recarga</button></div><div class="admin-summary"><div class="admin-kpi"><span>RECARGAS NO PROTÓTIPO</span><strong id="admin-total">0</strong></div><div class="admin-kpi"><span>AGUARDANDO ENTREGA</span><strong id="admin-pending">0</strong></div><div class="admin-kpi"><span>PONTOS EMITIDOS</span><strong id="admin-issued">0</strong></div></div><article class="panel table-panel"><div class="table-toolbar"><strong>Controle de recargas</strong><span>QR Code único por pedido</span></div><div class="table-scroll"><table><thead><tr><th>CLIENTE / PEDIDO</th><th>VALOR</th><th>PONTOS</th><th>STATUS</th><th>AÇÕES</th></tr></thead><tbody id="admin-table"></tbody></table></div></article></section>
+
+    <section class="page" id="page-configuracoes"><div class="section-intro"><div><span class="eyebrow">CONFIGURAÇÃO ECOLOOP</span><h2>Regras de pontos</h2><p>Defina quantos pontos o cliente recebe por real gasto em recargas.</p></div></div><div class="settings-layout"><article class="panel settings-card"><span class="eyebrow">ACÚMULO DE PONTOS</span><h3>Quanto vale cada real?</h3><p>Esta taxa pode ser ajustada pela administração Ecojet. A alteração afeta novas recargas.</p><label for="points-rate">Pontos por R$ 1,00 em recargas</label><div class="input-suffix"><input id="points-rate" type="number" min="1" max="1000" step="1" value="2"><span>pontos</span></div><div class="example"><span>SIMULAÇÃO</span><b>Uma recarga de R$ 50,00 gera <strong id="rate-example">100 pontos</strong></b></div><button class="primary-button" id="save-settings">Salvar configuração</button><p class="notice" id="settings-notice" aria-live="polite"></p></article><article class="panel settings-card conversion-settings"><span class="eyebrow">RESGATE DE PONTOS</span><h3>Conversão do benefício</h3><p>Parâmetro apresentado na proposta do protótipo.</p><div class="fixed-conversion"><strong>100 pts</strong><span>equivalem a</span><strong>R$ 1,00</strong></div><div class="lock-note">◉ Conversão fixa neste protótipo</div><small class="muted">A quantidade de pontos por real é ajustável. A taxa de conversão do resgate permanece fixa.</small></article></div></section>
+    <footer>Ecojet • ECOLOOP <span>Recarregou, pontuou. Reutilizou, ganhou.</span></footer>
+  </main>
+
+  <dialog id="refill-dialog" class="modal"><form id="refill-form" method="dialog"><button type="button" class="close-button" data-close>×</button><span class="eyebrow">NOVA MOVIMENTAÇÃO</span><h2>Registrar recarga</h2><p>O sistema cria um QR Code exclusivo para o pedido.</p><label>Nome do cliente<input name="customer" required placeholder="Ex.: Mariana Costa"></label><div class="form-row"><label>Tipo de suprimento<select name="kind"><option>Cartucho</option><option>Toner</option></select></label><label>Valor da recarga (R$)<input name="value" type="number" min="0.01" step="0.01" required placeholder="50,00"></label></div><label>Referência do pedido <small>(opcional)</small><input name="order" placeholder="Ex.: ECO-1048"></label><button class="primary-button full" type="submit">Criar recarga e QR Code</button></form></dialog>
+  <dialog id="qr-dialog" class="modal qr-modal"><button type="button" class="close-button" data-close>×</button><span class="eyebrow">QR CODE DO PEDIDO</span><h2 id="qr-title">Pedido ECOLOOP</h2><p id="qr-subtitle">A confirmação de entrega libera a pontuação.</p><div id="qr-code" class="qr-box"></div><div class="token-line">Código único <strong id="qr-token"></strong></div><div id="qr-status" class="status-note"></div><button type="button" id="deliver-button" class="primary-button full">Marcar como entregue</button><button type="button" id="simulate-scan" class="secondary-button full">Simular leitura pelo cliente</button><button type="button" id="scan-camera" class="text-button centered">Usar câmera para escanear</button><video id="camera-view" class="camera-view" playsinline></video><div class="manual-scan"><label>Confirmar com código<input id="manual-token" placeholder="Cole o código único"></label><button id="manual-confirm" class="secondary-button full">Confirmar QR Code</button></div></dialog>
+  <dialog id="customer-scan-dialog" class="modal qr-modal"><button type="button" class="close-button" data-close>×</button><span class="eyebrow">ÁREA DO CLIENTE</span><h2>Escanear recarga</h2><p>Escaneie o QR Code que acompanha o cartucho entregue. Os pontos entram no saldo depois da confirmação da entrega.</p><button type="button" id="scan-camera-customer" class="primary-button full">Abrir câmera e escanear</button><video id="customer-camera" class="camera-view" playsinline></video><div class="manual-scan"><label>Ou informe o código do QR<input id="customer-token" placeholder="Ex.: ECO-2406-A8F2"></label><button id="customer-confirm" class="secondary-button full">Confirmar código</button></div></dialog>
+  <dialog id="message-dialog" class="modal message-modal"><button type="button" class="close-button" data-close>×</button><div class="success-mark">✓</div><h2 id="message-title">Pronto!</h2><p id="message-body"></p><button class="primary-button full" data-close>Entendi</button></dialog>
+</body>
+</html>

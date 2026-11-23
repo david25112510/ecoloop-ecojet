@@ -2,9 +2,9 @@
 
 ## Contexto
 
-O ECOLOOP é uma proposta de programa de relacionamento associada às recargas de cartuchos e toners da Ecojet. A ideia surgiu de uma conversa de diagnóstico com um representante da empresa em 19/11/2026. Segundo o relato compartilhado naquela conversa, a empresa gostaria de incentivar clientes a escolher recargas oferecendo um benefício ecológico acumulável.
+O projeto PEI I foi iniciado em julho de 2026 por David Silva de Souza e José Carlos, que procuraram a Ecojet como organização parceira. Em 20/08/2026, a dupla realizou uma visita de diagnóstico à empresa; David participou presencialmente e José Carlos por videochamada. Na ocasião, Wesley Almeida relatou a necessidade de incentivar clientes a escolher recargas de cartuchos e toners oferecendo um benefício em pontos com apelo ecológico. O dia exato do início das atividades em julho não foi registrado.
 
-O site público da Ecojet apresenta serviços de recarga de cartuchos e toners, além de informações sobre reutilização e meio ambiente. A proposta ECOLOOP busca complementar essa comunicação por meio de pontos ligados a cada recarga. O contato institucional e as regras de negócio ainda devem ser validados pela empresa.
+O site público da Ecojet apresenta serviços de recarga de cartuchos e toners, além de informações sobre reutilização e meio ambiente. A proposta ECOLOOP busca complementar essa comunicação por meio de pontos ligados a cada recarga. O desenho do programa e suas regras de negócio ainda devem ser validados pela empresa.
 
 ## Problema
 

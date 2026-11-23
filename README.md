@@ -68,6 +68,7 @@ Os parâmetros são hipóteses de prototipação e precisam ser confirmados pela
 ├── app.js                           # Regras de demonstração e navegação
 ├── assets/
 │   └── ecoloop-logo-transparent.png  # Marca ECOLOOP usada na interface
+│   └── cartucho-ecojet-demo.png      # Foto do cartucho com selo ECOLOOP demonstrativo
 └── docs/
     ├── CONTEXTO-E-ESCOPO.md         # Contexto, problema, objetivo e limites
     ├── FLUXO-E-REGRAS.md            # Jornada de recarga e regras de pontos
@@ -85,9 +86,18 @@ Antes de um piloto real, será necessário validar as regras com a Ecojet e defi
 
 ## Projeto acadêmico
 
-Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do curso de Análise e Desenvolvimento de Sistemas. Desenvolvido por **David Silva de Souza (4º período)** e **José Carlos (1º período)**. A proposta foi discutida com um representante da Ecojet em visita híbrida realizada em 19/11/2026; David esteve presencialmente e José Carlos participou por videochamada. Isso registra uma conversa de diagnóstico, não uma aprovação comercial do sistema.
+Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do curso de Análise e Desenvolvimento de Sistemas. Desenvolvido por **David Silva de Souza (4º período)** e **José Carlos (4º período)**.
 
-Consulte a linha do tempo em [`docs/HISTORICO-DO-PROJETO.md`](docs/HISTORICO-DO-PROJETO.md) e os limites acadêmicos e de escopo em [`docs/CONTEXTO-E-ESCOPO.md`](docs/CONTEXTO-E-ESCOPO.md).
+## Histórico do projeto
+
+| Data | Atividade |
+|---|---|
+| Julho de 2026 (dia não registrado) | Início do trabalho em dupla e busca pela Ecojet como empresa parceira. |
+| 20/08/2026 | Visita de diagnóstico à Ecojet. David participou presencialmente e José Carlos por videochamada; Wesley Almeida relatou a necessidade de incentivar recargas com pontos ecológicos. |
+| 19–23/11/2026 | Estruturação da proposta ECOLOOP, definição do fluxo do programa, criação da identidade e desenvolvimento do protótipo e da documentação. |
+| 24/11/2026 | Prazo de entrega acadêmica informado pela dupla. |
+
+A visita registra a necessidade relatada pela empresa e não representa aprovação ou decisão de implantação. Consulte os limites acadêmicos e de escopo em [`docs/CONTEXTO-E-ESCOPO.md`](docs/CONTEXTO-E-ESCOPO.md) e o histórico detalhado em [`docs/HISTORICO-DO-PROJETO.md`](docs/HISTORICO-DO-PROJETO.md).
 
 ## Marca e referência empresarial
 

@@ -1,20 +1,23 @@
 # Histórico do projeto
 
-Linha do tempo redigida a partir das informações fornecidas pela dupla. Ela distingue o que foi relatado como realizado do que ainda é planejamento.
+Esta linha do tempo registra os fatos informados pela dupla e as atividades efetivamente desenvolvidas. Quando o dia exato não foi informado, a data aparece somente por mês ou por intervalo.
 
 | Data | Registro |
 |---|---|
-| Antes de 18/11/2026 | Não houve atividades do projeto realizadas pela dupla neste período. |
-| 18/11/2026 | David e José Carlos reorganizaram a dupla após a saída dos integrantes do grupo anterior. O trabalho foi retomado para conclusão do PEI I. |
-| 19/11/2026 | Conversa de diagnóstico com um representante da Ecojet. David participou presencialmente e José Carlos participou por videochamada. Foi relatada a necessidade de incentivar recargas de cartuchos e toners por meio de benefício em pontos. |
-| Após 19/11/2026 | Estruturação da proposta ECOLOOP e construção do protótipo navegável. As atividades e datas devem ser atualizadas conforme ocorrerem. |
-| 24/11/2026 | Prazo de entrega informado pela dupla. |
+| Julho de 2026 — dia não registrado | David Silva de Souza e José Carlos iniciaram o PEI I em dupla e começaram a procurar a Ecojet para realizar o projeto com a empresa. |
+| 20/08/2026 | Visita à Ecojet. David participou presencialmente e José Carlos acompanhou por videochamada. Wesley Almeida relatou a necessidade de incentivar clientes a recarregar cartuchos e toners por meio de um benefício em pontos com apelo ecológico. A dupla registrou fotos da fachada e do interior da empresa para o portfólio. |
+| 19 a 23/11/2026 | A dupla estruturou a proposta ECOLOOP, definiu o fluxo de pontos e QR Code, elaborou a identidade do programa e desenvolveu o protótipo navegável e sua documentação. A interface também passou a demonstrar a etiqueta para impressão local na Zebra GC420. |
+| 24/11/2026 | Prazo de entrega do portfólio acadêmico informado pela dupla; etapa prevista na data desta atualização. |
 
 ## Integrantes
 
 - David Silva de Souza — Análise e Desenvolvimento de Sistemas, 4º período.
-- José Carlos — Análise e Desenvolvimento de Sistemas, 1º período.
+- José Carlos — Análise e Desenvolvimento de Sistemas, 4º período.
 
-## Observação documental
+## Registro da visita
 
-O registro da conversa e a proposta acadêmica não indicam que a Ecojet aprovou, contratou ou decidiu implantar o ECOLOOP. Atualize esta linha do tempo somente com atividades efetivamente realizadas e inclua evidências solicitadas pela disciplina no portfólio.
+A visita de diagnóstico ocorreu em 20/08/2026. A participação de José Carlos foi por videochamada. O registro identifica a necessidade relatada por Wesley Almeida; não significa que a Ecojet aprovou, contratou ou decidiu implantar o ECOLOOP.
+
+## Precisão das datas
+
+A dupla informou julho de 2026 como início do trabalho e da busca pela Ecojet, mas não indicou o dia específico. Por isso, o histórico mantém a data em nível mensal. O prazo de 24/11/2026 é uma data de entrega futura em relação à atualização de 23/11/2026.

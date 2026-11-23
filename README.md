@@ -11,8 +11,9 @@ Protótipo acadêmico de um programa de pontos para incentivar clientes da Ecoje
 Não é necessário instalar ferramentas ou dependências para visualizar as telas:
 
 1. Baixe ou clone o repositório.
-2. Abra `index.html` em um navegador atualizado.
-3. A biblioteca que desenha o QR Code e as fontes visuais são carregadas pela internet.
+2. No Windows, clique duas vezes em [`ABRIR-ECOLOOP.bat`](ABRIR-ECOLOOP.bat). Ele inicia um servidor local e abre o protótipo no navegador. Deixe aberta a janela **Servidor ECOLOOP** enquanto usa o sistema; feche-a para encerrar o servidor.
+3. Como alternativa, abra um terminal nesta pasta, execute `py -m http.server 8000` e acesse `http://localhost:8000`.
+4. A biblioteca que desenha o QR Code e as fontes visuais são carregadas pela internet.
 
 O acesso à câmera costuma exigir `localhost` ou um site com HTTPS. Se não quiser ou não puder usar a câmera, digite o código que aparece junto ao QR Code. Para servir a pasta localmente com Python:
 

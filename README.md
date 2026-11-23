@@ -17,6 +17,8 @@ Não é necessário instalar ferramentas ou dependências para visualizar as tel
 
 O acesso à câmera costuma exigir `localhost` ou um site com HTTPS. Se não quiser ou não puder usar a câmera, digite o código que aparece junto ao QR Code. Para servir a pasta localmente com Python:
 
+Na visão geral do cliente, a foto do cartucho fornecida para o projeto aparece em um cartão de expedição com um selo ECOLOOP e QR Code visual demonstrativo. Esse QR ilustrativo não identifica um pedido real; os QR Codes funcionais continuam sendo gerados ao registrar uma recarga no painel Ecojet.
+
 ```powershell
 py -m http.server 8000
 ```

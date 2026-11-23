@@ -72,6 +72,8 @@ function render(){
  $('#redeem-explainer').textContent=balance>=100?'Você já pode transformar seus pontos em desconto.':'Acumule mais pontos até completar 100 para resgatar R$ 1,00.';
  $('#redeem-button').disabled=balance<100; $('#redeem-button').style.opacity=balance<100?'.55':'1';
  renderRecent();renderHistory();renderAdmin();
+ const deliveryQr=$('#delivery-qr');
+ if(deliveryQr){deliveryQr.innerHTML='';if(window.QRCode)new QRCode(deliveryQr,{text:'ECOLOOP:DEMO-ILUSTRATIVA',width:48,height:48,colorDark:'#173a25',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});else deliveryQr.innerHTML='<span class="qr-fallback">QR</span>';}
  $('#points-rate').value=state.rate; $('#rate-example').textContent=`${(50*state.rate).toLocaleString('pt-BR')} pontos`;
 }
 function openQr(id){

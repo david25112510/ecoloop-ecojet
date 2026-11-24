@@ -60,4 +60,4 @@ Antes de imprimir etiquetas reais, confirmar com a Ecojet a variante exata da im
 
 ## Página de regulamento demonstrativo
 
-O protótipo disponibiliza a página [`../regulamento.html`](../regulamento.html), com as regras já ilustradas e os pontos ainda pendentes de decisão. O texto esclarece que o protótipo não é um serviço comercial oficial, não cria benefício real e não deve ser usado para cadastrar dados verdadeiros. As condições operacionais e comerciais devem ser aprovadas pela Ecojet antes de qualquer uso real.
+O protótipo disponibiliza a página [`../regulamento.html`](../regulamento.html), com as regras demonstradas e as definições necessárias para operação real. A Ecojet validou a proposta e aprovou o protótipo para teste em 24/11/2026. O sistema demonstrativo não cria benefício real nem deve ser usado para cadastrar dados verdadeiros; condições operacionais e comerciais devem ser definidas antes de qualquer uso com clientes.

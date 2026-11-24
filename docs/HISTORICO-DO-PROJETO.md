@@ -8,7 +8,7 @@ Esta linha do tempo registra os fatos informados pela dupla e as atividades efet
 | 20/08/2026 | Visita à Ecojet. David participou presencialmente e José Carlos acompanhou por videochamada. Wesley Almeida relatou a necessidade de incentivar clientes a recarregar cartuchos e toners por meio de um benefício em pontos com apelo ecológico. A dupla registrou fotos da fachada e do interior da empresa para o portfólio. |
 | 19 a 23/11/2026 | A dupla estruturou a proposta inicialmente chamada ECOLOOP, definiu o fluxo de pontos e QR Code e desenvolveu o protótipo navegável e sua documentação. A interface também passou a demonstrar a etiqueta para impressão local na Zebra GC420. |
 | 24/11/2026 | Prazo de entrega do portfólio acadêmico informado pela dupla. |
-| 24/11/2026 | A dupla começou a testar o nome de trabalho RETINTA ECOJET e sua identidade visual, adicionou uma página de regulamento demonstrativo e atualizou os materiais do projeto. A marca ainda depende de validação da Ecojet e pesquisa de disponibilidade. |
+| 24/11/2026 | A dupla definiu a identidade visual RETINTA ECOJET e adicionou uma página de regulamento demonstrativo. No mesmo dia, a Ecojet validou a proposta, aprovou o protótipo para teste e confirmou o nome após consulta. A decisão autoriza testar o protótipo e não registra implantação comercial. |
 
 ## Integrantes
 
@@ -17,7 +17,7 @@ Esta linha do tempo registra os fatos informados pela dupla e as atividades efet
 
 ## Registro da visita
 
-A visita de diagnóstico ocorreu em 20/08/2026. A participação de José Carlos foi por videochamada. O registro identifica a necessidade relatada por Wesley Almeida; não significa que a Ecojet aprovou, contratou ou decidiu implantar o programa, inicialmente denominado ECOLOOP e atualmente em avaliação como RETINTA ECOJET.
+A visita de diagnóstico ocorreu em 20/08/2026. A participação de José Carlos foi por videochamada. Em 24/11/2026, a dupla informou que a Ecojet validou a proposta, aprovou o protótipo para teste e confirmou o nome RETINTA ECOJET após consulta. Isso não significa implantação comercial do programa.
 
 ## Precisão das datas
 

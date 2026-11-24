@@ -4,7 +4,7 @@
 
 O projeto PEI I foi iniciado em julho de 2026 por David Silva de Souza e José Carlos, que procuraram a Ecojet como organização parceira. Em 20/08/2026, a dupla realizou uma visita de diagnóstico à empresa; David participou presencialmente e José Carlos por videochamada. Na ocasião, Wesley Almeida relatou a necessidade de incentivar clientes a escolher recargas de cartuchos e toners oferecendo um benefício em pontos com apelo ecológico. O dia exato do início das atividades em julho não foi registrado.
 
-O site público da Ecojet apresenta serviços de recarga de cartuchos e toners, além de informações sobre reutilização e meio ambiente. A proposta inicialmente chamada ECOLOOP passou a ser testada sob o nome de trabalho RETINTA ECOJET em 24/11/2026, buscando complementar a comunicação da empresa por meio de pontos ligados a cada recarga. A identidade e as regras de negócio ainda devem ser validadas pela Ecojet; o nome também requer pesquisa de disponibilidade.
+O site público da Ecojet apresenta serviços de recarga de cartuchos e toners, além de informações sobre reutilização e meio ambiente. A proposta inicialmente chamada ECOLOOP foi apresentada à Ecojet e validada em 24/11/2026; a empresa aprovou o protótipo para teste e confirmou o nome RETINTA ECOJET após consulta. A autorização registrada é para testar o protótipo, sem caracterizar implantação comercial. Regras operacionais específicas continuam sujeitas a confirmação antes de um piloto com clientes reais.
 
 ## Problema
 
@@ -41,6 +41,6 @@ O escopo é um protótipo de interface navegável executado no navegador. A apli
 - **Equipe Ecojet:** registra a recarga e confirma a entrega no painel de demonstração.
 - **Administrador:** ajusta a taxa de pontos acumulados por real.
 
-## Validação pendente
+## Validação realizada e próximos cuidados
 
-Apresentar a proposta e o protótipo a Wesley Almeida ou à pessoa designada pela Ecojet, colher comentários e registrar quais regras ou fluxos precisam mudar. Nenhum resultado de validação é afirmado neste documento.
+Em 24/11/2026, a dupla informou que a Ecojet validou a proposta, aprovou o protótipo para teste e confirmou o nome RETINTA ECOJET após consulta. Antes de envolver clientes reais ou operar benefícios comerciais, deverão ser definidos os detalhes de participação, resgate, suporte, proteção de dados e operação. O protótipo atual continua demonstrativo, com dados locais fictícios.

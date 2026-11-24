@@ -100,13 +100,13 @@ Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do cur
 | 20/08/2026 | Visita de diagnóstico à Ecojet. David participou presencialmente e José Carlos por videochamada; Wesley Almeida relatou a necessidade de incentivar recargas com pontos ecológicos. |
 | 19–23/11/2026 | Estruturação da proposta inicialmente chamada ECOLOOP, definição do fluxo do programa e desenvolvimento do protótipo e da documentação. |
 | 24/11/2026 | Prazo de entrega acadêmica informado pela dupla. |
-| 24/11/2026 | Teste do nome de trabalho RETINTA ECOJET, estudo de identidade visual e inclusão de uma página de regulamento demonstrativo. Nome e regras sujeitos à validação da empresa e à pesquisa de disponibilidade. |
+| 24/11/2026 | A Ecojet validou a proposta, aprovou o protótipo para teste e confirmou o nome RETINTA ECOJET após consulta. A dupla atualizou a identidade visual, o histórico e o regulamento demonstrativo. |
 
-A visita registra a necessidade relatada pela empresa e não representa aprovação ou decisão de implantação. Consulte os limites acadêmicos e de escopo em [`docs/CONTEXTO-E-ESCOPO.md`](docs/CONTEXTO-E-ESCOPO.md) e o histórico detalhado em [`docs/HISTORICO-DO-PROJETO.md`](docs/HISTORICO-DO-PROJETO.md).
+A validação e aprovação do protótipo para teste foram informadas pela dupla em 24/11/2026. Isso registra a autorização para testar o protótipo, sem afirmar que o programa esteja implantado comercialmente. Consulte o escopo em [`docs/CONTEXTO-E-ESCOPO.md`](docs/CONTEXTO-E-ESCOPO.md) e o histórico em [`docs/HISTORICO-DO-PROJETO.md`](docs/HISTORICO-DO-PROJETO.md).
 
 ## Marca e referência empresarial
 
-O programa foi inicialmente chamado ECOLOOP e está sendo testado com o nome de trabalho RETINTA ECOJET. A identidade foi desenhada para acompanhar as cores verdes usadas pela Ecojet. O nome e a marca não foram aprovados pela empresa e ainda precisam de pesquisa de disponibilidade. É uma proposta acadêmica independente, não uma marca ou produto oficial da empresa. Site da empresa: [ecojet.com.br](https://ecojet.com.br).
+O programa foi inicialmente chamado ECOLOOP. Em 24/11/2026, a Ecojet validou a proposta, aprovou o protótipo para teste e confirmou o nome RETINTA ECOJET após consulta. A identidade visual acompanha as cores verdes usadas pela Ecojet. A aprovação refere-se à proposta e ao protótipo em teste; não significa implantação comercial. Site da empresa: [ecojet.com.br](https://ecojet.com.br).
 
 ## Licença
 

@@ -4,7 +4,7 @@
 
 Protótipo acadêmico de um programa de pontos para incentivar clientes da Ecojet a recarregar cartuchos e toners. Cada recarga concluída gera pontos; um QR Code acompanha o pedido e permite ao cliente confirmar o recebimento e liberar a pontuação.
 
-> Este repositório contém um protótipo de estudo. Não é um serviço oficial da Ecojet e não está integrado aos sistemas da empresa. Dados, nomes e pedidos exibidos na demonstração são fictícios.
+> Este repositório contém o protótipo acadêmico RETINTA ECOJET. A Ecojet aprovou o projeto e informou que pretende implantá-lo; esta versão ainda não é o sistema de produção nem está integrada aos sistemas da empresa. Use apenas dados fictícios.
 
 ## Abrir o protótipo
 
@@ -15,7 +15,7 @@ Não é necessário instalar ferramentas ou dependências para visualizar as tel
 3. Como alternativa, abra um terminal nesta pasta, execute `py -m http.server 8000` e acesse `http://localhost:8000`.
 4. A biblioteca que desenha o QR Code e as fontes visuais são carregadas pela internet.
 
-O link **Regulamento demonstrativo**, no rodapé do protótipo, abre a página [`regulamento.html`](regulamento.html). Ela apresenta as regras demonstradas no protótipo aprovado para teste e separa definições operacionais necessárias antes de eventual operação real.
+O link **Regulamento demonstrativo**, no rodapé do protótipo, abre a página [`regulamento.html`](regulamento.html). Ela apresenta as regras demonstradas no protótipo aprovado e destaca definições operacionais ainda necessárias para a versão de produção.
 
 O acesso à câmera costuma exigir `localhost` ou um site com HTTPS. Se não quiser ou não puder usar a câmera, digite o código que aparece junto ao QR Code. Para servir a pasta localmente com Python:
 
@@ -65,7 +65,7 @@ Os dados ficam no armazenamento local do navegador (`localStorage`). Limpar os d
 | Liberação dos pontos | Após a equipe confirmar a entrega e o cliente confirmar o QR |
 | Reutilização do QR | Bloqueada depois do primeiro crédito |
 
-Os valores iniciais representam as regras demonstradas no protótipo aprovado para teste. A operação comercial ainda depende de planejamento técnico e definição dos procedimentos da Ecojet.
+Os valores iniciais representam as regras demonstradas no protótipo aprovado pela Ecojet. A operação comercial depende das próximas fases de planejamento, desenvolvimento e homologação descritas em [`docs/EVOLUCAO.md`](docs/EVOLUCAO.md).
 
 ## Estrutura do repositório
 
@@ -85,7 +85,7 @@ Os valores iniciais representam as regras demonstradas no protótipo aprovado pa
     ├── ARQUITETURA.md               # Como clientes, operadores e histórico são armazenados
     ├── DADOS-E-PRIVACIDADE.md       # Dados de demonstração e cuidados
     ├── ROTEIRO-DE-TESTES.md         # Casos e registro das sessões de teste
-    ├── RESULTADOS-TESTE-2026-11-24.md # Resultados observados nas primeiras sessões
+    ├── RESULTADOS-TESTE-2026-11-24.md # Testes, aprovação e planejamento da implantação
     ├── CHECKLIST-FINAL-PEI-I.md      # Pendências acadêmicas e técnicas até a entrega
     ├── Proposta_RETINTA_Ecojet.docx  # Proposta atualizada após os testes
     ├── Proposta_RETINTA_Ecojet.pdf   # Versão pronta para leitura e apresentação
@@ -95,13 +95,13 @@ Os valores iniciais representam as regras demonstradas no protótipo aprovado pa
 
 ## Limites e próximos passos técnicos
 
-Esta versão roda inteiramente no navegador. A etiqueta é montada localmente e encaminhada à caixa de impressão do navegador para selecionar a Zebra GC420; não há envio direto à impressora por rede ou servidor de impressão. As dimensões da etiqueta devem corresponder ao rolo instalado e às preferências do driver. O protótipo não possui contas reais, autenticação, banco de dados, controle de acesso, API, validação de pedidos, integração com entregas ou caixa, nem proteção de servidor contra fraude. O painel administrativo é apenas uma tela de demonstração. Não cadastre dados pessoais ou comerciais reais.
+Esta versão roda inteiramente no navegador. A impressão local na Zebra GC420 foi testada e aprovada pela Ecojet, conforme relato da dupla; a etiqueta é encaminhada pela caixa de impressão do navegador. Ainda não existe envio por rede/servidor nem há backend, contas reais, banco central ou integrações oficiais. O painel continua demonstrativo. Não cadastre dados pessoais ou comerciais reais.
 
-Antes de um piloto real, será necessário validar as regras com a Ecojet e definir uma arquitetura com autenticação, serviço de backend, banco de dados, QR assinado ou resgate controlado no servidor, trilha de auditoria, tratamento de falhas, política de privacidade e integração com os processos da empresa. O arquivo [`docs/EVOLUCAO.md`](docs/EVOLUCAO.md) detalha uma sequência de trabalho possível.
+Como a Ecojet informou que pretende implantar o programa, as próximas fases propostas são: formalizar as regras e requisitos, planejar arquitetura e proteção de dados, desenvolver a versão operacional, integrar o que for necessário, homologar, conduzir um piloto controlado e avaliar resultados. Não há cronograma de implantação definido. A sequência completa está em [`docs/EVOLUCAO.md`](docs/EVOLUCAO.md).
 
 ## Projeto acadêmico
 
-Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do curso de Análise e Desenvolvimento de Sistemas. Desenvolvido por **David Silva de Souza (4º período)** e **José Carlos (4º período)**.
+Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do curso de Análise e Desenvolvimento de Sistemas. Desenvolvido por **David Silva de Souza (4º período)** e **José Carlos Rodrigues (4º período)**. José contribuiu no desenvolvimento das telas, configuração de fontes e organização dos layouts.
 
 ## Histórico do projeto
 
@@ -112,15 +112,16 @@ Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do cur
 | 19–23/11/2026 | Estruturação da proposta inicialmente chamada ECOLOOP, definição do fluxo do programa e desenvolvimento do protótipo e da documentação. |
 | 24/11/2026 | Prazo de entrega acadêmica informado pela dupla. |
 | 24/11/2026 | A Ecojet validou a proposta, aprovou o protótipo para teste e confirmou o nome RETINTA ECOJET após consulta. A dupla atualizou a identidade visual, o histórico e o regulamento demonstrativo. |
-| 23–24/11/2026 | Fotos registram QR e pedido demonstrativo de R$ 80 com 160 pontos previstos, entrega confirmada e crédito de 160 pontos. Não demonstram impressão física nem teste de QR repetido. |
+| 23–24/11/2026 | Fotos registram QR e pedido demonstrativo de R$ 80 com 160 pontos previstos, entrega confirmada e crédito de 160 pontos. A impressão física na Zebra GC420 e o histórico foram aprovados em teste final, conforme relato posterior da dupla. |
+| 24/11/2026 | David informou que a Ecojet testou e aprovou o protótipo, incluindo histórico de clientes e impressão física na Zebra GC420. A empresa pretende implantar o programa; escopo, cronograma e fases de produção ainda serão planejados. |
 
-A validação e aprovação do protótipo para teste foram informadas pela dupla em 24/11/2026. Isso registra a autorização para testar o protótipo, sem afirmar que o programa esteja implantado comercialmente. Consulte o escopo em [`docs/CONTEXTO-E-ESCOPO.md`](docs/CONTEXTO-E-ESCOPO.md) e o histórico em [`docs/HISTORICO-DO-PROJETO.md`](docs/HISTORICO-DO-PROJETO.md).
+A aprovação do protótipo e a intenção de implantação foram informadas pela dupla em 24/11/2026. Isso registra a decisão de avançar ao planejamento, sem afirmar que a versão de produção já esteja implantada. Consulte o escopo em [`docs/CONTEXTO-E-ESCOPO.md`](docs/CONTEXTO-E-ESCOPO.md) e as fases em [`docs/EVOLUCAO.md`](docs/EVOLUCAO.md).
 
 O estado das evidências e as pendências para fechar o portfólio acadêmico estão em [`docs/CHECKLIST-FINAL-PEI-I.md`](docs/CHECKLIST-FINAL-PEI-I.md). As fotos originais das sessões permanecem em pasta privada e não fazem parte deste repositório público.
 
 ## Marca e referência empresarial
 
-O programa foi inicialmente chamado ECOLOOP. Em 24/11/2026, a Ecojet validou a proposta, aprovou o protótipo para teste e confirmou o nome RETINTA ECOJET após consulta. A identidade visual acompanha as cores verdes usadas pela Ecojet. A aprovação refere-se à proposta e ao protótipo em teste; não significa implantação comercial. Site da empresa: [ecojet.com.br](https://ecojet.com.br).
+O programa foi inicialmente chamado ECOLOOP. Em 24/11/2026, a Ecojet aprovou o projeto após testar o protótipo e confirmou o nome RETINTA ECOJET após consulta. A empresa informou que pretende implantá-lo na prática. A identidade visual acompanha as cores verdes usadas pela Ecojet. Site da empresa: [ecojet.com.br](https://ecojet.com.br).
 
 ## Licença
 

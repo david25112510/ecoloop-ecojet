@@ -1,23 +1,29 @@
-# Resultados observados nos testes do protótipo
+# Resultado dos testes e aprovação do protótipo
 
-As observações abaixo foram registradas a partir de três fotos fornecidas pela dupla em 24/11/2026. Uma das fotos mostra a sessão anterior de 23/11/2026. As telas exibem um pedido demonstrativo de cartucho de R$ 80,00, com a taxa de 2 pontos por real.
+**Atualização da dupla: 24/11/2026**
 
-## Evidências e resultados
+A Ecojet testou e aprovou o protótipo RETINTA ECOJET. David informou que o histórico de clientes e a impressão física das etiquetas na Zebra GC420 foram verificados com sucesso e que as funções do sistema funcionaram durante o teste. A empresa aprovou o projeto e informou que pretende implantá-lo na prática.
 
-| Evidência | O que aparece | Resultado observado |
+O registro acima reflete o relato mais recente da dupla. O cronograma, o escopo de produção e a data de implantação ainda não foram definidos; a versão que existe nesta pasta continua sendo um protótipo local.
+
+## Evidências fotográficas anteriores
+
+As três fotos fornecidas em 24/11 registram telas de sessões realizadas em 23 e 24/11. Elas mostram pedidos demonstrativos de R$ 80,00 com 160 pontos previstos, QR Codes, configuração de etiqueta de 50 × 30 mm, confirmação de entrega e mensagem de crédito dos pontos. As fotos não mostram a impressão física; esse resultado foi informado posteriormente pela dupla após o teste com a impressora Zebra GC420.
+
+| Sessão registrada na foto | Elementos visíveis | Resultado indicado pela atualização da dupla |
 |---|---|---|
-| Sessão de 23/11/2026, aproximadamente 15h25 | Pedido ECO123 para “Mariana”, cartucho de R$ 80,00, 160 pontos previstos, QR Code e medidas de etiqueta 50 × 30 mm. | Cadastro demonstrativo, cálculo e geração/apresentação do QR foram exercitados. A foto não comprova impressão física. |
-| Sessão de 24/11/2026, aproximadamente 11h13 | Pedido ECO235 para David Silva de Souza, cartucho de R$ 80,00, 160 pontos previstos, QR Code e aviso de entrega confirmada. | Fluxo de recarga, identificação do pedido, QR e confirmação da entrega foram demonstrados. |
-| Sessão de 24/11/2026, aproximadamente 11h15 | Mensagem “Pontos adicionados!” confirma 160 pontos para o pedido ECO235 e o painel mostra 408 pontos emitidos. | Crédito de pontos após a confirmação foi demonstrado. |
+| 23/11, aproximadamente 15h25 | Pedido ECO123, cartucho de R$ 80,00, 160 pontos previstos, QR Code e configuração 50 × 30 mm. | Geração do pedido/QR visível; teste posterior da impressão física foi aprovado. |
+| 24/11, aproximadamente 11h13 | Pedido ECO235, cartucho de R$ 80,00, 160 pontos previstos e entrega confirmada. | Fluxo de entrega demonstrado. |
+| 24/11, aproximadamente 11h15 | Mensagem “Pontos adicionados!” para o pedido ECO235 e painel com 408 pontos emitidos. | Crédito demonstrado; a dupla relata que o histórico de clientes também foi testado e aprovado. |
 
-As fotos originais foram mantidas localmente em `ECOLOOP/private-assets/evidencias-testes-2026-11-24/`, fora do repositório público, pois mostram a tela de trabalho e dados identificáveis. Arquivos: `01-geracao-de-qr-23-11.jpeg`, `02-qr-e-entrega.jpeg` e `03-credito-de-pontos.jpeg`.
+As fotos originais permanecem localmente em `ECOLOOP/private-assets/evidencias-testes-2026-11-24/`, fora do repositório público, pois mostram tela de trabalho e dados identificáveis. O resultado da impressão física foi relatado pela dupla; não há nova foto da etiqueta impressa anexada a este registro.
 
-## O que ainda não foi comprovado pelas fotos
+## Retorno da empresa
 
-- Impressão física e leitura do QR diretamente na etiqueta Zebra GC420.
-- Bloqueio de uma segunda leitura do mesmo QR.
-- Pesquisa de clientes, consulta de saldos e históricos por pessoa.
-- Registro de operador responsável pelo cadastro e pela confirmação da entrega.
-- Resgate demonstrativo e conferência do extrato por cliente.
+Segundo a dupla, a Ecojet aprovou o protótipo após os testes e informou que pretende implantá-lo na prática. Esse retorno valida a continuidade do projeto, mas não define por si só o escopo técnico, as regras comerciais, a infraestrutura, o cronograma ou a data de entrada em operação.
 
-Esses itens devem ser executados e anotados no [`ROTEIRO-DE-TESTES.md`](ROTEIRO-DE-TESTES.md). O teste observado usou um nome identificável na interface; para novas sessões, utilizar somente dados fictícios. O armazenamento atual é local e não possui autenticação ou controles adequados para dados reais.
+## Próximos passos
+
+Planejar com a Ecojet os requisitos da versão operacional, definir regras e responsabilidades, escolher a arquitetura e os controles de dados, desenvolver integrações necessárias, homologar os fluxos e conduzir um piloto controlado antes de uma eventual implantação ampla. A sequência detalhada está em [`EVOLUCAO.md`](EVOLUCAO.md).
+
+O protótipo local não tem autenticação nem banco de dados central e deve continuar usando dados fictícios até que exista uma versão de produção aprovada e adequada para esse uso.

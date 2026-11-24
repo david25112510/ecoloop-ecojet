@@ -11,10 +11,10 @@ Este checklist combina os critérios do Manual de Prática de Extensão Interdis
 - [x] Empresa parceira apresentada: serviços de cartuchos, toners, recargas, tintas, papel e impressoras/copiadoras; fotos da fachada e do interior da visita.
 - [x] Histórico atualizado com início em julho de 2026 (sem inventar o dia), visita em 20/08/2026 e participação de José Carlos por videochamada.
 - [x] Proposta RETINTA ECOJET, identidade visual, protótipo navegável e regulamento demonstrativo registrados.
-- [x] Aprovação da proposta, do protótipo para teste e do nome RETINTA ECOJET pela Ecojet registrada em 24/11/2026, conforme informação da dupla.
+- [x] Aprovação do projeto e do protótipo RETINTA ECOJET pela Ecojet após os testes, conforme informação da dupla em 24/11/2026.
 - [x] Relação com ADS e tecnologias do protótipo explicadas: HTML, CSS, JavaScript, QRCode.js, APIs do navegador, localStorage e impressão via navegador/driver da Zebra.
 - [x] Fotos de teste descritas: em 23/11, QR/pedido de R$ 80, 160 pontos previstos e etiqueta configurada em 50 × 30 mm; em 24/11, entrega confirmada e mensagem de crédito de 160 pontos.
-- [x] Limites de evidência explícitos: as fotos não comprovam impressão física, bloqueio de segunda leitura, nem teste das telas de cliente e operador acrescentadas depois.
+- [x] Resultado final atualizado: a dupla informa que o histórico de clientes e a impressão física na Zebra GC420 foram testados e aprovados; a Ecojet pretende implantar o sistema na prática.
 - [x] Reflexão inicial organizada em torno da expectativa informada: aplicar programação em um problema real.
 
 ## 2. Itens pendentes para fechar o portfólio conforme o manual
@@ -31,11 +31,10 @@ Este checklist combina os critérios do Manual de Prática de Extensão Interdis
 
 ### Testes e evidências
 
-- [ ] Executar e registrar no `ROTEIRO-DE-TESTES.md` os testes pendentes do protótipo, usando dados fictícios: cadastro/pesquisa de cliente, saldo e histórico individual, cadastro/seleção de operador e autoria registrada.
-- [ ] Registrar teste de QR já utilizado e conferir se não credita pontos pela segunda vez.
-- [ ] Conferir extrato e resgate demonstrativo e se a taxa configurável e a conversão fixa aparecem coerentes.
-- [ ] Se a Ecojet disponibilizar a impressora e autorizar, testar a etiqueta fisicamente na Zebra GC420, confirmar mídia/medidas, imprimir e ler o QR. Até lá, relatar somente a prévia e a opção de impressão exibidas na tela.
-- [ ] Recolher e registrar as observações da Ecojet após a sessão; incluir avaliação de satisfação somente se ela for realmente aplicada.
+- [x] Rodada final do protótipo aprovada pela Ecojet, incluindo consulta ao histórico de clientes e impressão física na Zebra GC420, conforme relato da dupla.
+- [x] Funcionamento geral do protótipo aprovado pela empresa, conforme relato da dupla; detalhes por caso estão indicados no `ROTEIRO-DE-TESTES.md`.
+- [ ] Guardar, se disponível, o registro da sessão final (data, participantes, modelo de impressora/mídia e fotos da etiqueta impressa) para anexar como evidência formal. A atualização atual é o relato da dupla.
+- [ ] Recolher e registrar observações adicionais da Ecojet após a rodada; incluir avaliação de satisfação somente se uma pesquisa for realmente aplicada.
 - [ ] Manter as fotos originais de teste em pasta privada, fora do repositório público, e inserir no portfólio apenas cópias revisadas que não exponham dados desnecessários.
 
 ### Documentos obrigatórios e entrega acadêmica
@@ -47,7 +46,7 @@ Este checklist combina os critérios do Manual de Prática de Extensão Interdis
 
 ## 3. O que não é pré-requisito acadêmico demonstrado para este portfólio
 
-Construir um produto comercial completo não consta como condição já estabelecida no material da disciplina. O protótipo atual roda localmente e não tem backend, contas seguras, banco de dados central ou integração oficial com a Ecojet. Implantação, uso de dados reais, descontos reais, hospedagem, segurança de produção e integração com sistemas da empresa são uma etapa futura, sujeita a planejamento e autorização da Ecojet. Não apresentar essas entregas futuras como necessárias para concluir o portfólio, salvo instrução específica do professor ou da empresa.
+Construir um produto comercial completo não consta como condição já estabelecida no material da disciplina. A Ecojet informou que pretende implantar o sistema; a próxima etapa é planejar essa implantação. O protótipo disponível ainda roda localmente e não tem backend, contas seguras, banco de dados central ou integração oficial. Uso de dados reais, descontos reais, hospedagem e integrações exigem uma versão operacional projetada e aprovada pela Ecojet. Não apresentar essas entregas futuras como concluídas.
 
 ## 4. Critério prático de conclusão
 
@@ -55,4 +54,4 @@ O trabalho acadêmico estará pronto para entrega quando os itens obrigatórios 
 
 ## 5. Estado do roteiro de testes
 
-Os três registros fotográficos confirmam partes do fluxo demonstrativo de QR, entrega e crédito. A evidência detalhada está em [`RESULTADOS-TESTE-2026-11-24.md`](RESULTADOS-TESTE-2026-11-24.md); a execução dos próximos casos deve ser anotada em [`ROTEIRO-DE-TESTES.md`](ROTEIRO-DE-TESTES.md).
+O registro das fotos iniciais e o relato da rodada final estão em [`RESULTADOS-TESTE-2026-11-24.md`](RESULTADOS-TESTE-2026-11-24.md). As fases propostas para planejar a versão operacional estão em [`EVOLUCAO.md`](EVOLUCAO.md).

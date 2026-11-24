@@ -1,6 +1,6 @@
 # Lista para concluir e entregar o PEI I — RETINTA ECOJET
 
-**Atualizada em 24/11/2026**  
+**Atualizada em 24/11/2026**
 David Silva de Souza e José Carlos Rodrigues — Análise e Desenvolvimento de Sistemas, 4º período.
 
 ## Já concluído

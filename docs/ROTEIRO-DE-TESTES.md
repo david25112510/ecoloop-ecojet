@@ -14,13 +14,15 @@
 |---|---|---|---|
 | T01 | Abrir a área do cliente e verificar saldo, recargas recentes e acesso ao extrato. | Dados demonstrativos aparecem com valores e pontos coerentes. | |
 | T02 | No painel, ajustar a taxa para 3 pontos por real e salvar. | A simulação de R$ 50 mostra 150 pontos; a taxa continua salva após atualizar a página. | |
-| T03 | Registrar uma recarga fictícia de R$ 50 e abrir os detalhes. | São calculados 150 pontos e criado um token/QR único com status aguardando entrega. | |
+| T03 | Cadastrar um novo cliente fictício; depois selecioná-lo no formulário e registrar uma recarga de R$ 50. | O cliente recebe um código próprio; a recarga fica vinculada a ele, calcula 100 pontos na taxa padrão e cria token/QR único. | |
 | T04 | Tentar confirmar o QR antes de marcar a entrega. | O sistema informa que a entrega ainda não foi confirmada e não credita pontos. | |
 | T05 | Abrir a prévia da etiqueta para a Zebra GC420. | Logo RETINTA ECOJET, identificação do pedido e QR aparecem dentro da etiqueta; tamanho confere com a mídia carregada. | |
-| T06 | Marcar a recarga como entregue e confirmar o QR pelo modo de demonstração ou código manual. | O status muda para pontos creditados e o saldo aumenta uma única vez. | |
+| T06 | Marcar a recarga como entregue e confirmar o QR pela conta do cliente correto, usando demonstração ou código manual. | O status muda para pontos creditados e somente o saldo daquele cliente aumenta uma única vez. | |
 | T07 | Tentar ler novamente o mesmo QR. | O sistema bloqueia o segundo crédito e informa que o código já foi utilizado. | |
 | T08 | Conferir o extrato e a área de resgate. | Recarga, pontos, saldo e conversão fixa de 100 pontos = R$ 1 aparecem coerentes. | |
-| T09 | Restaurar os dados de demonstração e confirmar a ação. | Aparecem novamente o saldo, a taxa e as recargas fictícias iniciais. | |
+| T09 | Pesquisar o cliente pelo nome/código e abrir o histórico; verificar quem cadastrou a recarga e quem confirmou a entrega. | A ficha mostra o saldo individual, todos os lançamentos e os nomes dos operadores responsáveis por cada etapa. | |
+| T10 | Cadastrar dois operadores, alternar o operador ativo e registrar/entregar uma recarga. | O painel mostra o operador que criou o pedido e quem marcou a entrega, mantendo a autoria de cada etapa. | |
+| T11 | Restaurar os dados de demonstração e confirmar a ação. | Aparecem novamente clientes, saldo, taxa, operadores e recargas fictícias iniciais. | |
 
 ## Registro da sessão
 

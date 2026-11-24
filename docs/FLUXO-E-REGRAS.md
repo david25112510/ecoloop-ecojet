@@ -2,9 +2,12 @@
 
 ## Jornada proposta
 
+O painel mantém um cadastro demonstrativo com código e nome do cliente. A busca por nome/código abre a ficha com o saldo calculado e o histórico individual. Cada recarga guarda uma cópia do operador ativo no momento do cadastro; a confirmação da entrega guarda quem executou essa etapa. A autoria antiga que não existia na versão anterior é identificada como registro anterior, sem atribuir a ação a uma pessoa específica.
+
 ```mermaid
 flowchart LR
-  A[Equipe registra a recarga] --> B[Sistema gera código e QR únicos]
+  A[Equipe localiza ou cadastra cliente] --> A2[Registra recarga vinculada ao cliente e operador ativo]
+  A2 --> B[Sistema gera código e QR únicos]
   B --> C[Equipe imprime etiqueta na Zebra GC420]
   C --> D[Etiqueta acompanha a embalagem]
   D --> E[Equipe entrega o cartucho ou toner]
@@ -12,7 +15,7 @@ flowchart LR
   F --> G[Cliente escaneia o QR da etiqueta]
   G --> H{Código válido e não usado?}
   H -- Não --> I[Exibir motivo e não creditar]
-  H -- Sim --> J[Creditar pontos uma única vez]
+  H -- Sim --> J[Creditar pontos uma única vez na conta do cliente]
   J --> K[Cliente consulta saldo e extrato]
   K --> L[Cliente pode solicitar desconto demonstrativo]
 ```

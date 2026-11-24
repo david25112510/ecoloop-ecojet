@@ -29,12 +29,13 @@ Depois, abra `http://localhost:8000` no navegador. A permissão de câmera só �
 
 ## Demonstração rápida
 
-1. Abra **Painel Ecojet** e entre em **Recargas e QR**.
-2. Selecione **Nova recarga**, informe o cliente, o tipo de suprimento e o valor.
-3. No detalhe do pedido, confira ou ajuste largura e altura para corresponder à etiqueta carregada na Zebra GC420 e selecione **Imprimir etiqueta na Zebra GC420**.
-4. Na janela de impressão do navegador, escolha a impressora Zebra local e confirme as preferências de mídia; a aplicação abre a prévia/impressão, mas não dispara impressão silenciosa.
-5. Marque a entrega como concluída. O cliente recebe o cartucho com a etiqueta e escaneia o QR pela área do cliente. Para a demonstração sem câmera, use o código único exibido no painel.
-6. Confira o saldo e o extrato do cliente. Em **Regras de pontos**, ajuste a taxa por real; a nova taxa vale para recargas registradas a partir daí.
+1. Abra **Painel Ecojet** e entre em **Clientes**. Cadastre um cliente fictício ou pesquise um cadastro para conferir saldo e histórico.
+2. Em **Regras de pontos e operadores**, cadastre quem vai operar e selecione a pessoa ativa; depois confira a taxa de pontos.
+3. Entre em **Recargas e QR**, selecione o cliente cadastrado, o tipo de suprimento e o valor. O registro guarda o operador ativo.
+4. No detalhe do pedido, confira ou ajuste largura e altura para corresponder à etiqueta carregada na Zebra GC420 e selecione **Imprimir etiqueta na Zebra GC420**.
+5. Na janela de impressão do navegador, escolha a impressora Zebra local e confirme as preferências de mídia; a aplicação abre a prévia/impressão, mas não dispara impressão silenciosa.
+6. Marque a entrega como concluída. O operador ativo fica registrado nesta etapa. O cliente seleciona seu perfil demonstrativo e escaneia o QR; para a demonstração sem câmera, use o código único.
+7. Confira a ficha do cliente, saldo e extrato. Para repetir a sessão, restaure os dados demonstrativos nas regras.
 
 Para repetir uma rodada desde o início, abra **Regras de pontos** e escolha **Restaurar dados de demonstração**. A ação apaga as alterações salvas neste navegador e repõe os dados fictícios iniciais. O roteiro completo está em [`docs/ROTEIRO-DE-TESTES.md`](docs/ROTEIRO-DE-TESTES.md).
 
@@ -43,6 +44,9 @@ Os dados ficam no armazenamento local do navegador (`localStorage`). Limpar os d
 ## O que está incluído
 
 - Área demonstrativa do cliente com saldo, histórico e pontos disponíveis para resgate.
+- Cadastro e busca de clientes por nome ou código, com saldo e histórico individual de recargas, pontos e resgates.
+- Cadastro de operadores e autoria registrada no cadastro da recarga e na confirmação da entrega.
+- Recargas vinculadas a um cliente cadastrado para evitar nomes duplicados por erro de digitação.
 - Painel demonstrativo da Ecojet com registro de recarga e controle de entrega.
 - Geração de um token exclusivo por pedido e apresentação do QR Code correspondente.
 - Preparação de etiqueta com QR e envio à janela de impressão local do navegador, permitindo escolher a Zebra GC420 instalada.
@@ -78,9 +82,10 @@ Os valores iniciais representam as regras demonstradas no protótipo aprovado pa
 └── docs/
     ├── CONTEXTO-E-ESCOPO.md         # Contexto, problema, objetivo e limites
     ├── FLUXO-E-REGRAS.md            # Jornada de recarga e regras de pontos
-    ├── ARQUITETURA.md               # Como o protótipo funciona e como evoluir
+    ├── ARQUITETURA.md               # Como clientes, operadores e histórico são armazenados
     ├── DADOS-E-PRIVACIDADE.md       # Dados de demonstração e cuidados
     ├── ROTEIRO-DE-TESTES.md         # Casos e registro das sessões de teste
+    ├── RESULTADOS-TESTE-2026-11-24.md # Resultados observados nas primeiras sessões
     ├── HISTORICO-DO-PROJETO.md      # Linha do tempo com fatos informados
     └── EVOLUCAO.md                  # Próximas etapas sugeridas
 ```

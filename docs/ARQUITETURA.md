@@ -8,7 +8,7 @@ O protótipo é uma aplicação web estática, sem etapa de compilação:
 |---|---|
 | `index.html` | Estrutura das telas, formulários, tabelas e diálogos |
 | `styles.css` | Cores, tipografia, componentes e adaptação para celular |
-| `app.js` | Navegação, demonstração de regras, atualização das telas e armazenamento local |
+| `app.js` | Navegação, cadastro e consulta de clientes, cadastro de operadores, regras, histórico e armazenamento local |
 | `assets/retinta-ecojet-logo.png` | Estudo de marca exibido no menu |
 
 O HTML carrega `QRCode.js` por CDN para desenhar os QR Codes. A câmera utiliza a API `BarcodeDetector` quando disponível. Por compatibilidade, há entrada manual do token. A impressão usa a caixa de impressão do navegador e o driver local da Zebra GC420.
@@ -24,9 +24,11 @@ O HTML carrega `QRCode.js` por CDN para desenhar os QR Codes. A câmera utiliza 
 7. Se a recarga foi entregue e ainda não foi pontuada, o estado muda para creditado e o saldo aumenta.
 8. O estado atualizado é escrito em `localStorage` e as telas são redesenhadas.
 
-## Armazenamento
+## Clientes, operadores e armazenamento
 
-`localStorage` mantém a taxa, o saldo demonstrativo, as recargas e os resgates no navegador e perfil usados. Não sincroniza entre aparelhos ou pessoas. Os registros de exemplo são carregados quando não existe estado salvo.
+`localStorage` mantém clientes (código e nome), taxa de pontos, operadores, recargas, resgates e o operador ativo no navegador e perfil usados. O saldo de cada cliente é calculado pelos pontos de recargas creditadas menos resgates associados àquele cliente. A ficha do cliente mostra saldo, recargas, resgates, status e operadores que registraram a recarga e confirmaram a entrega.
+
+Ao abrir uma base anterior do protótipo, uma migração local associa os registros legados aos clientes por nome e marca a autoria antiga como “Registro demonstrativo anterior” quando não houver operador registrado. Não sincroniza entre aparelhos ou pessoas; os cadastros são apenas demonstrativos e não oferecem autenticação ou controle de acesso.
 
 ## Dependências externas
 

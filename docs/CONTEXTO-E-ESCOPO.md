@@ -4,7 +4,7 @@
 
 O projeto PEI I foi iniciado em julho de 2026 por David Silva de Souza e José Carlos, que procuraram a Ecojet como organização parceira. Em 20/08/2026, a dupla realizou uma visita de diagnóstico à empresa; David participou presencialmente e José Carlos por videochamada. Na ocasião, Wesley Almeida relatou a necessidade de incentivar clientes a escolher recargas de cartuchos e toners oferecendo um benefício em pontos com apelo ecológico. O dia exato do início das atividades em julho não foi registrado.
 
-O site público da Ecojet apresenta serviços de recarga de cartuchos e toners, além de informações sobre reutilização e meio ambiente. A proposta ECOLOOP busca complementar essa comunicação por meio de pontos ligados a cada recarga. O desenho do programa e suas regras de negócio ainda devem ser validados pela empresa.
+O site público da Ecojet apresenta serviços de recarga de cartuchos e toners, além de informações sobre reutilização e meio ambiente. A proposta inicialmente chamada ECOLOOP passou a ser testada sob o nome de trabalho RETINTA ECOJET em 24/11/2026, buscando complementar a comunicação da empresa por meio de pontos ligados a cada recarga. A identidade e as regras de negócio ainda devem ser validadas pela Ecojet; o nome também requer pesquisa de disponibilidade.
 
 ## Problema
 

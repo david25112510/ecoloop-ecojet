@@ -9,7 +9,7 @@ O protótipo é uma aplicação web estática, sem etapa de compilação:
 | `index.html` | Estrutura das telas, formulários, tabelas e diálogos |
 | `styles.css` | Cores, tipografia, componentes e adaptação para celular |
 | `app.js` | Navegação, demonstração de regras, atualização das telas e armazenamento local |
-| `assets/ecoloop-logo-transparent.png` | Marca exibida no menu |
+| `assets/retinta-ecojet-logo.png` | Estudo de marca exibido no menu |
 
 O HTML carrega `QRCode.js` por CDN para desenhar os QR Codes. A câmera utiliza a API `BarcodeDetector` quando disponível. Por compatibilidade, há entrada manual do token. A impressão usa a caixa de impressão do navegador e o driver local da Zebra GC420.
 

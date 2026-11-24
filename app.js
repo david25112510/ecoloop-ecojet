@@ -29,8 +29,8 @@ function statusLabel(status){ return ({credited:'Pontos creditados',delivered:'E
 function showPage(name){
   $$('.page').forEach(p=>p.classList.toggle('active',p.id===`page-${name}`));
   $$('.nav-link').forEach(b=>b.classList.toggle('active',b.dataset.page===name));
-  const titles={inicio:currentMode==='admin'?'Painel Ecojet':'Seu ciclo ECOLOOP',historico:'Meu extrato',resgatar:'Usar meus pontos',recargas:'Recargas e QR Codes',configuracoes:'Regras de pontos'};
-  $('#page-title').textContent=titles[name]||'ECOLOOP';
+  const titles={inicio:currentMode==='admin'?'Painel Ecojet':'Seu ciclo RETINTA ECOJET',historico:'Meu extrato',resgatar:'Usar meus pontos',recargas:'Recargas e QR Codes',configuracoes:'Regras de pontos'};
+  $('#page-title').textContent=titles[name]||'RETINTA ECOJET';
   if(name==='recargas') renderAdmin();
 }
 function setMode(mode){
@@ -39,7 +39,7 @@ function setMode(mode){
   $('#customer-nav').classList.toggle('hidden',mode!=='customer');
   $('#admin-nav').classList.toggle('hidden',mode!=='admin');
   $('#profile-name').textContent=mode==='customer'?state.customerName:'Equipe Ecojet';
-  $('#profile-role').textContent=mode==='customer'?'Cliente ECOLOOP':'Administrador';
+  $('#profile-role').textContent=mode==='customer'?'Cliente RETINTA ECOJET':'Administrador';
   $('#profile .avatar');
   $('.avatar').textContent=mode==='customer'?state.customerName.split(' ').map(x=>x[0]).slice(0,2).join('').toUpperCase():'EJ';
   showPage('inicio'); render();
@@ -73,23 +73,23 @@ function render(){
  $('#redeem-button').disabled=balance<100; $('#redeem-button').style.opacity=balance<100?'.55':'1';
  renderRecent();renderHistory();renderAdmin();
  const deliveryQr=$('#delivery-qr');
- if(deliveryQr){deliveryQr.innerHTML='';if(window.QRCode)new QRCode(deliveryQr,{text:'ECOLOOP:DEMO-ILUSTRATIVA',width:48,height:48,colorDark:'#173a25',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});else deliveryQr.innerHTML='<span class="qr-fallback">QR</span>';}
+ if(deliveryQr){deliveryQr.innerHTML='';if(window.QRCode)new QRCode(deliveryQr,{text:'RETINTA ECOJET:DEMO-ILUSTRATIVA',width:48,height:48,colorDark:'#173a25',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});else deliveryQr.innerHTML='<span class="qr-fallback">QR</span>';}
  $('#points-rate').value=state.rate; $('#rate-example').textContent=`${(50*state.rate).toLocaleString('pt-BR')} pontos`;
 }
 function openQr(id){
  const refill=state.refills.find(r=>r.id===id); if(!refill)return;
  currentQrId=id; $('#qr-title').textContent=refill.order||refill.id; $('#qr-subtitle').textContent=`${refill.customer} · ${refill.kind} · ${money(refill.value)} · ${refill.points} pontos previstos`;
  $('#qr-token').textContent=refill.token; $('#manual-token').value=''; $('#qr-code').innerHTML='';
- if(window.QRCode) new QRCode($('#qr-code'),{text:`ECOLOOP:${refill.token}`,width:164,height:164,colorDark:'#173a25',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});
+ if(window.QRCode) new QRCode($('#qr-code'),{text:`RETINTA ECOJET:${refill.token}`,width:164,height:164,colorDark:'#173a25',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});
  else $('#qr-code').innerHTML='<div class="qr-fallback">QR Code será exibido quando houver conexão.</div>';
- $('#print-order').textContent=refill.order||refill.id; $('#print-points').textContent=`${refill.points} pontos ECOLOOP`; $('#print-token').textContent=refill.token; $('#print-qr-code').innerHTML='';
+ $('#print-order').textContent=refill.order||refill.id; $('#print-points').textContent=`${refill.points} pontos RETINTA ECOJET`; $('#print-token').textContent=refill.token; $('#print-qr-code').innerHTML='';
  const delivered=refill.status==='delivered'||refill.status==='credited';
  $('#deliver-button').classList.toggle('hidden',delivered); $('#simulate-scan').classList.toggle('hidden',refill.status==='credited'); $('#scan-camera').classList.toggle('hidden',refill.status==='credited'); $('.manual-scan').classList.toggle('hidden',refill.status==='credited');
  $('#qr-status').textContent=refill.status==='credited'?'QR já utilizado. Os pontos foram creditados uma única vez.':delivered?'Entrega confirmada. O cliente já pode escanear o QR Code.':'A pontuação só será liberada depois que a entrega for marcada como concluída.';
  $('#qr-dialog').showModal();
 }
 function confirmScan(input){
- const token=String(input||'').trim().replace(/^ECOLOOP:/i,'');
+ const token=String(input||'').trim().replace(/^(?:RETINTA(?:\s+ECOJET)?|ECOLOOP):/i,'');
  const refill=state.refills.find(r=>r.token.toLowerCase()===token.toLowerCase());
  if(!refill){showMessage('Código não encontrado','Confira o código do QR Code e tente novamente.');return false;}
  if(refill.status==='credited'){showMessage('QR Code já utilizado','Este pedido já recebeu pontos. Cada código pode ser usado uma única vez.');return false;}
@@ -125,7 +125,7 @@ $('#print-label-button').addEventListener('click',()=>{
  if(!Number.isFinite(width)||width<45||width>108||!Number.isFinite(height)||height<26||height>250){showMessage('Medidas fora do limite','Para este layout, informe largura de 45 a 108 mm e altura de 26 a 250 mm. Confira as dimensões da etiqueta carregada na Zebra GC420.');return}
  if(!window.QRCode){showMessage('QR Code indisponível','Conecte-se à internet para carregar a biblioteca que gera o QR Code antes de imprimir.');return}
  $('#print-qr-code').innerHTML='';
- new QRCode($('#print-qr-code'),{text:`ECOLOOP:${state.refills.find(r=>r.id===currentQrId)?.token||''}`,width:220,height:220,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});
+ new QRCode($('#print-qr-code'),{text:`RETINTA ECOJET:${state.refills.find(r=>r.id===currentQrId)?.token||''}`,width:220,height:220,colorDark:'#000000',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});
  document.documentElement.style.setProperty('--label-width',`${width}mm`);
  document.documentElement.style.setProperty('--label-height',`${height}mm`);
  $('#print-page-style').textContent=`@page { size: ${width}mm ${height}mm; margin: 0; }`;

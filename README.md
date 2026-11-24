@@ -1,4 +1,4 @@
-# ECOLOOP
+# RETINTA ECOJET
 
 **Recarregou, pontuou. Reutilizou, ganhou.**
 
@@ -11,7 +11,7 @@ Protótipo acadêmico de um programa de pontos para incentivar clientes da Ecoje
 Não é necessário instalar ferramentas ou dependências para visualizar as telas:
 
 1. Baixe ou clone o repositório.
-2. No Windows, clique duas vezes em [`ABRIR-ECOLOOP.bat`](ABRIR-ECOLOOP.bat). Ele inicia um servidor local e abre o protótipo no navegador. Deixe aberta a janela **Servidor ECOLOOP** enquanto usa o sistema; feche-a para encerrar o servidor.
+2. No Windows, clique duas vezes em [`ABRIR-ECOLOOP.bat`](ABRIR-ECOLOOP.bat). Ele inicia um servidor local e abre o protótipo no navegador. Deixe aberta a janela **Servidor RETINTA ECOJET** enquanto usa o sistema; feche-a para encerrar o servidor.
 3. Como alternativa, abra um terminal nesta pasta, execute `py -m http.server 8000` e acesse `http://localhost:8000`.
 4. A biblioteca que desenha o QR Code e as fontes visuais são carregadas pela internet.
 
@@ -19,7 +19,7 @@ O link **Regulamento demonstrativo**, no rodapé do protótipo, abre a página [
 
 O acesso à câmera costuma exigir `localhost` ou um site com HTTPS. Se não quiser ou não puder usar a câmera, digite o código que aparece junto ao QR Code. Para servir a pasta localmente com Python:
 
-Na visão geral do cliente, a foto do cartucho fornecida para o projeto aparece em um cartão de expedição com um selo ECOLOOP e QR Code visual demonstrativo. Esse QR ilustrativo não identifica um pedido real; os QR Codes funcionais continuam sendo gerados ao registrar uma recarga no painel Ecojet.
+Na visão geral do cliente, a foto do cartucho Ecojet recebe uma sobreposição de etiqueta com o arquivo oficial do estudo de logo RETINTA ECOJET e um QR Code ilustrativo. Esse QR não identifica um pedido real; os QR Codes funcionais continuam sendo gerados ao registrar uma recarga no painel Ecojet.
 
 ```powershell
 py -m http.server 8000
@@ -47,7 +47,7 @@ Os dados ficam no armazenamento local do navegador (`localStorage`). Limpar os d
 - Leitura por câmera, quando compatível e autorizada, e confirmação por código digitado.
 - Proteção de fluxo: o QR só pontua após a entrega e só pode ser usado uma vez.
 - Configuração administrativa de pontos acumulados por real em recargas.
-- Layout adaptado a computadores e celulares e identidade visual ECOLOOP inspirada na Ecojet.
+- Layout adaptado a computadores e celulares e identidade visual RETINTA ECOJET inspirada na Ecojet.
 
 ## Regras demonstradas
 
@@ -71,8 +71,8 @@ Os parâmetros são hipóteses de prototipação e precisam ser confirmados pela
 ├── regulamento.html                 # Página de regras demonstrativas do programa
 ├── regulamento.css                  # Estilo responsivo da página de regulamento
 ├── assets/
-│   └── ecoloop-logo-transparent.png  # Marca ECOLOOP usada na interface
-│   └── cartucho-ecojet-demo.png      # Foto do cartucho com selo ECOLOOP demonstrativo
+│   └── retinta-ecojet-logo.png       # Estudo de marca RETINTA ECOJET usado na interface
+│   └── cartucho-ecojet-demo.png      # Foto do cartucho com etiqueta ilustrativa sobreposta na interface
 └── docs/
     ├── CONTEXTO-E-ESCOPO.md         # Contexto, problema, objetivo e limites
     ├── FLUXO-E-REGRAS.md            # Jornada de recarga e regras de pontos
@@ -98,14 +98,15 @@ Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do cur
 |---|---|
 | Julho de 2026 (dia não registrado) | Início do trabalho em dupla e busca pela Ecojet como empresa parceira. |
 | 20/08/2026 | Visita de diagnóstico à Ecojet. David participou presencialmente e José Carlos por videochamada; Wesley Almeida relatou a necessidade de incentivar recargas com pontos ecológicos. |
-| 19–23/11/2026 | Estruturação da proposta ECOLOOP, definição do fluxo do programa, criação da identidade e desenvolvimento do protótipo e da documentação. |
+| 19–23/11/2026 | Estruturação da proposta inicialmente chamada ECOLOOP, definição do fluxo do programa e desenvolvimento do protótipo e da documentação. |
 | 24/11/2026 | Prazo de entrega acadêmica informado pela dupla. |
+| 24/11/2026 | Teste do nome de trabalho RETINTA ECOJET, estudo de identidade visual e inclusão de uma página de regulamento demonstrativo. Nome e regras sujeitos à validação da empresa e à pesquisa de disponibilidade. |
 
 A visita registra a necessidade relatada pela empresa e não representa aprovação ou decisão de implantação. Consulte os limites acadêmicos e de escopo em [`docs/CONTEXTO-E-ESCOPO.md`](docs/CONTEXTO-E-ESCOPO.md) e o histórico detalhado em [`docs/HISTORICO-DO-PROJETO.md`](docs/HISTORICO-DO-PROJETO.md).
 
 ## Marca e referência empresarial
 
-ECOLOOP é o nome e slogan escolhidos para o conceito de programa. A identidade foi desenhada para acompanhar as cores verdes usadas pela Ecojet. ECOLOOP é uma proposta acadêmica independente, não uma marca ou produto oficial da empresa. Site da empresa: [ecojet.com.br](https://ecojet.com.br).
+O programa foi inicialmente chamado ECOLOOP e está sendo testado com o nome de trabalho RETINTA ECOJET. A identidade foi desenhada para acompanhar as cores verdes usadas pela Ecojet. O nome e a marca não foram aprovados pela empresa e ainda precisam de pesquisa de disponibilidade. É uma proposta acadêmica independente, não uma marca ou produto oficial da empresa. Site da empresa: [ecojet.com.br](https://ecojet.com.br).
 
 ## Licença
 

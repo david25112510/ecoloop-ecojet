@@ -15,6 +15,8 @@ Não é necessário instalar ferramentas ou dependências para visualizar as tel
 3. Como alternativa, abra um terminal nesta pasta, execute `py -m http.server 8000` e acesse `http://localhost:8000`.
 4. A biblioteca que desenha o QR Code e as fontes visuais são carregadas pela internet.
 
+O link **Regulamento demonstrativo**, no rodapé do protótipo, abre a página [`regulamento.html`](regulamento.html). Ela documenta as regras representadas na demonstração e destaca os pontos que ainda dependem de validação da Ecojet. Não é um regulamento oficial.
+
 O acesso à câmera costuma exigir `localhost` ou um site com HTTPS. Se não quiser ou não puder usar a câmera, digite o código que aparece junto ao QR Code. Para servir a pasta localmente com Python:
 
 Na visão geral do cliente, a foto do cartucho fornecida para o projeto aparece em um cartão de expedição com um selo ECOLOOP e QR Code visual demonstrativo. Esse QR ilustrativo não identifica um pedido real; os QR Codes funcionais continuam sendo gerados ao registrar uma recarga no painel Ecojet.
@@ -66,6 +68,8 @@ Os parâmetros são hipóteses de prototipação e precisam ser confirmados pela
 ├── index.html                       # Telas e estrutura da aplicação
 ├── styles.css                       # Identidade visual e adaptação responsiva
 ├── app.js                           # Regras de demonstração e navegação
+├── regulamento.html                 # Página de regras demonstrativas do programa
+├── regulamento.css                  # Estilo responsivo da página de regulamento
 ├── assets/
 │   └── ecoloop-logo-transparent.png  # Marca ECOLOOP usada na interface
 │   └── cartucho-ecojet-demo.png      # Foto do cartucho com selo ECOLOOP demonstrativo

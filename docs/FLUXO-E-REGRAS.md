@@ -57,3 +57,7 @@ Antes de imprimir etiquetas reais, confirmar com a Ecojet a variante exata da im
 - Como funcionará o desconto: em qual serviço, com quais limites e como o caixa o reconhecerá?
 - Como tratar duas recargas no mesmo pedido, troca de cartucho ou entrega sem acesso à internet?
 - Quais informações do cliente são necessárias e por quanto tempo serão mantidas?
+
+## Página de regulamento demonstrativo
+
+O protótipo disponibiliza a página [`../regulamento.html`](../regulamento.html), com as regras já ilustradas e os pontos ainda pendentes de decisão. O texto esclarece que o protótipo não é um serviço comercial oficial, não cria benefício real e não deve ser usado para cadastrar dados verdadeiros. As condições operacionais e comerciais devem ser aprovadas pela Ecojet antes de qualquer uso real.

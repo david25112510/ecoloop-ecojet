@@ -86,6 +86,9 @@ Os valores iniciais representam as regras demonstradas no protótipo aprovado pa
     ├── DADOS-E-PRIVACIDADE.md       # Dados de demonstração e cuidados
     ├── ROTEIRO-DE-TESTES.md         # Casos e registro das sessões de teste
     ├── RESULTADOS-TESTE-2026-11-24.md # Resultados observados nas primeiras sessões
+    ├── CHECKLIST-FINAL-PEI-I.md      # Pendências acadêmicas e técnicas até a entrega
+    ├── Proposta_RETINTA_Ecojet.docx  # Proposta atualizada após os testes
+    ├── Proposta_RETINTA_Ecojet.pdf   # Versão pronta para leitura e apresentação
     ├── HISTORICO-DO-PROJETO.md      # Linha do tempo com fatos informados
     └── EVOLUCAO.md                  # Próximas etapas sugeridas
 ```
@@ -109,8 +112,11 @@ Trabalho de Projeto de Extensão e Inovação Interdisciplinar I (PEI I), do cur
 | 19–23/11/2026 | Estruturação da proposta inicialmente chamada ECOLOOP, definição do fluxo do programa e desenvolvimento do protótipo e da documentação. |
 | 24/11/2026 | Prazo de entrega acadêmica informado pela dupla. |
 | 24/11/2026 | A Ecojet validou a proposta, aprovou o protótipo para teste e confirmou o nome RETINTA ECOJET após consulta. A dupla atualizou a identidade visual, o histórico e o regulamento demonstrativo. |
+| 23–24/11/2026 | Fotos registram QR e pedido demonstrativo de R$ 80 com 160 pontos previstos, entrega confirmada e crédito de 160 pontos. Não demonstram impressão física nem teste de QR repetido. |
 
 A validação e aprovação do protótipo para teste foram informadas pela dupla em 24/11/2026. Isso registra a autorização para testar o protótipo, sem afirmar que o programa esteja implantado comercialmente. Consulte o escopo em [`docs/CONTEXTO-E-ESCOPO.md`](docs/CONTEXTO-E-ESCOPO.md) e o histórico em [`docs/HISTORICO-DO-PROJETO.md`](docs/HISTORICO-DO-PROJETO.md).
+
+O estado das evidências e as pendências para fechar o portfólio acadêmico estão em [`docs/CHECKLIST-FINAL-PEI-I.md`](docs/CHECKLIST-FINAL-PEI-I.md). As fotos originais das sessões permanecem em pasta privada e não fazem parte deste repositório público.
 
 ## Marca e referência empresarial
 

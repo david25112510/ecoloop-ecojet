@@ -2,21 +2,24 @@
 
 Esta lista organiza discussões futuras. Não representa trabalho já concluído nem decisão da Ecojet.
 
-## Etapa 1 — Validar a proposta
+## Etapa 1 — Proposta aprovada
 
-- Apresentar o fluxo e os parâmetros de pontos à Ecojet.
-- Confirmar como se registra a recarga e como se comprova a entrega.
-- Definir benefício, limites, estornos, validade e atendimento a exceções.
-- Anotar comentários e decisões sem tratar silêncio como aprovação.
+Concluída em 24/11/2026: a Ecojet validou a proposta, aprovou o protótipo para teste e confirmou o nome RETINTA ECOJET após consulta. Isso não significa autorização para operação comercial.
 
-## Etapa 2 — Refinar experiência e requisitos
+## Etapa 2 — Testar e refinar o protótipo
 
-- Escolher quais perfis e telas farão parte do primeiro piloto.
-- Desenhar cadastro, autenticação e recuperação de acesso.
+- Executar roteiro de testes atualizado, incluindo cadastro/histórico de clientes e autoria por operador.
+- Completar a verificação de QR repetido, extrato/resgate demonstrativo e responsividade.
+- Validar a prévia e, com a Ecojet, a impressão física na Zebra GC420.
+- Coletar retorno da equipe Ecojet e registrar os ajustes acordados.
+- Confirmar quais perfis e telas compõem o protótipo aprovado para teste.
+
+## Etapa 3 — Definir operação real, caso venha a ser planejada
+
 - Detalhar regras para pedidos cancelados, devolvidos, incompletos e repetidos.
 - Mapear informações pessoais estritamente necessárias.
 
-## Etapa 3 — Construir base de produto
+## Etapa 4 — Construir base de produto (fora do escopo do protótipo acadêmico)
 
 - Selecionar backend, banco de dados e hospedagem adequados.
 - Implementar login e autorização para cliente e equipe.
@@ -25,7 +28,7 @@ Esta lista organiza discussões futuras. Não representa trabalho já concluído
 - Validar a impressão física da etiqueta na GC420 local: variante do equipamento, tamanho e tipo de mídia, driver, calibração, contraste e leitura do QR.
 - Integrar com entrega e caixa após disponibilidade das interfaces autorizadas.
 
-## Etapa 4 — Verificar e pilotar
+## Etapa 5 — Verificar e pilotar (depende de decisão da Ecojet)
 
 - Validar acessibilidade, usabilidade em celulares e operação sem conexão.
 - Fazer revisão de segurança e privacidade antes de usar dados reais.

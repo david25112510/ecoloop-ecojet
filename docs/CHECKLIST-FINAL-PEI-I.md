@@ -22,9 +22,8 @@ Este checklist combina os critérios do Manual de Prática de Extensão Interdis
 ### Conteúdo e reflexão
 
 - [ ] Revisar se o portfólio final contém, com títulos claros, introdução, problema, objetivo, metodologia, relato de experiência e considerações finais.
-- [ ] Completar a biografia/reflexão pessoal de David com informações que ele queira compartilhar; o slide atual informa curso, período e contexto acadêmico, mas ainda é breve.
-- [ ] Completar a biografia/reflexão pessoal de José Carlos com sua trajetória, expectativa, contribuição, aprendizados e percepção da visita. Não presumir sentimentos ou atividades individuais sem confirmação.
-- [ ] No relato, acrescentar o que foi fácil/difícil, dúvidas ou erros observados, o que precisa aprofundar e como a experiência contribuiu para a formação — usando a experiência real dos dois.
+- [x] Incluir no portfólio as reflexões pessoais narradas por David e José Carlos, com desafio, contribuição, dificuldades, motivação e aprendizado, sem atribuir experiências não relatadas.
+- [ ] Se quiserem ampliar a reflexão para cobrir todos os pontos do manual, acrescentar o que foi fácil, dúvidas/erros encontrados e o que cada um ainda quer aprofundar — somente se corresponder à experiência de cada integrante.
 - [ ] Explicar a metodologia de extensão e o plano de ação executado, comparando o planejado com o realizado e identificando o próximo passo.
 - [ ] Apresentar efeitos sociais, econômicos e ambientais como potenciais, sem afirmar impacto medido: ainda não há dados de adesão, economia ou redução de resíduos.
 - [ ] Revisar fontes e referências, incluindo o Manual PEI, site/programa da Ecojet e legislação citada, e conferir se toda informação externa está atribuída.

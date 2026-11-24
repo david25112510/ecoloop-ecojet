@@ -15,7 +15,7 @@ Não é necessário instalar ferramentas ou dependências para visualizar as tel
 3. Como alternativa, abra um terminal nesta pasta, execute `py -m http.server 8000` e acesse `http://localhost:8000`.
 4. A biblioteca que desenha o QR Code e as fontes visuais são carregadas pela internet.
 
-O link **Regulamento demonstrativo**, no rodapé do protótipo, abre a página [`regulamento.html`](regulamento.html). Ela documenta as regras representadas na demonstração e destaca os pontos que ainda dependem de validação da Ecojet. Não é um regulamento oficial.
+O link **Regulamento demonstrativo**, no rodapé do protótipo, abre a página [`regulamento.html`](regulamento.html). Ela apresenta as regras demonstradas no protótipo aprovado para teste e separa definições operacionais necessárias antes de eventual operação real.
 
 O acesso à câmera costuma exigir `localhost` ou um site com HTTPS. Se não quiser ou não puder usar a câmera, digite o código que aparece junto ao QR Code. Para servir a pasta localmente com Python:
 
@@ -35,6 +35,8 @@ Depois, abra `http://localhost:8000` no navegador. A permissão de câmera só �
 4. Na janela de impressão do navegador, escolha a impressora Zebra local e confirme as preferências de mídia; a aplicação abre a prévia/impressão, mas não dispara impressão silenciosa.
 5. Marque a entrega como concluída. O cliente recebe o cartucho com a etiqueta e escaneia o QR pela área do cliente. Para a demonstração sem câmera, use o código único exibido no painel.
 6. Confira o saldo e o extrato do cliente. Em **Regras de pontos**, ajuste a taxa por real; a nova taxa vale para recargas registradas a partir daí.
+
+Para repetir uma rodada desde o início, abra **Regras de pontos** e escolha **Restaurar dados de demonstração**. A ação apaga as alterações salvas neste navegador e repõe os dados fictícios iniciais. O roteiro completo está em [`docs/ROTEIRO-DE-TESTES.md`](docs/ROTEIRO-DE-TESTES.md).
 
 Os dados ficam no armazenamento local do navegador (`localStorage`). Limpar os dados do site pode apagar o estado dessa demonstração. O botão de resgate altera apenas o saldo demonstrativo: não emite cupom nem autoriza desconto real.
 
@@ -59,7 +61,7 @@ Os dados ficam no armazenamento local do navegador (`localStorage`). Limpar os d
 | Liberação dos pontos | Após a equipe confirmar a entrega e o cliente confirmar o QR |
 | Reutilização do QR | Bloqueada depois do primeiro crédito |
 
-Os parâmetros são hipóteses de prototipação e precisam ser confirmados pela Ecojet antes de qualquer implantação.
+Os valores iniciais representam as regras demonstradas no protótipo aprovado para teste. A operação comercial ainda depende de planejamento técnico e definição dos procedimentos da Ecojet.
 
 ## Estrutura do repositório
 
@@ -78,6 +80,7 @@ Os parâmetros são hipóteses de prototipação e precisam ser confirmados pela
     ├── FLUXO-E-REGRAS.md            # Jornada de recarga e regras de pontos
     ├── ARQUITETURA.md               # Como o protótipo funciona e como evoluir
     ├── DADOS-E-PRIVACIDADE.md       # Dados de demonstração e cuidados
+    ├── ROTEIRO-DE-TESTES.md         # Casos e registro das sessões de teste
     ├── HISTORICO-DO-PROJETO.md      # Linha do tempo com fatos informados
     └── EVOLUCAO.md                  # Próximas etapas sugeridas
 ```
